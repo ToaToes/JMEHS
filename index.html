@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journal of Medicine, Exercise and Health Science</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/index_style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" onclick="showPage('home')">JMEHS</a>
+    <div class="nav-links">
+      <a href="#" class="active" id="nav-home" onclick="showPage('home'); return false;">Home</a>
+      <a href="#" id="nav-current" onclick="showPage('current'); return false;">Current Issue</a>
+      <a href="#" id="nav-about" onclick="showPage('about'); return false;">About</a>
+      <a href="#" id="nav-board" onclick="showPage('board'); return false;">Editorial Board</a>
+      <a href="#" id="nav-submit" onclick="showPage('submit'); return false;">Submit</a>
+      <a href="#" id="nav-contact" onclick="showPage('contact'); return false;">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HOME PAGE ══ -->
+<div id="home" class="page active">
+
+  <div class="hero">
+    <div class="hero-tag">Open Access · Peer Reviewed · Est. 2025</div>
+    <h1>Journal of <em>Medicine</em>, <em>Exercise</em> and <em>Health</em> Science</h1>
+    <p class="hero-sub">An international open-access journal advancing research in kinesiology, sport science, rehabilitation, and human performance.</p>
+    <div class="hero-actions">
+      <a href="#" class="btn-primary" onclick="showPage('current'); return false;">Browse Current Issue</a>
+      <a href="#" class="btn-outline" onclick="showPage('submit'); return false;">Submit Your Manuscript</a>
+    </div>
+  </div>
+
+  <div class="meta-strip">
+    <div class="meta-strip-inner">
+      <div class="meta-item"><span>2025</span>Founded</div>
+      <div class="meta-item"><span>Open Access</span>Publication Model</div>
+      <div class="meta-item"><span>Double-Blind</span>Peer Review</div>
+      <div class="meta-item"><span>Canada</span>Publisher</div>
+      <div class="meta-item"><span>Continuous</span>Publication</div>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-inner">
+      <div class="section-label">Latest Articles</div>
+      <div class="section-title">Volume 1, Issue 1 — 2025</div>
+
+      <div class="issue-banner">
+        <div class="issue-banner-info">
+          <h3>Volume 1, Issue 1 is now available</h3>
+          <p>5 articles across kinesiology, movement science, and sport rehabilitation.</p>
+        </div>
+        <span class="issue-badge">June 2025</span>
+      </div>
+
+      <div class="articles-grid" id="home-articles"></div>
+
+      <div style="text-align:center; margin-top:2rem;">
+        <a href="#" class="btn-primary" onclick="showPage('current'); return false;">View Full Issue</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-label">About the Journal</div>
+          <div class="section-title" style="margin-bottom:1rem;">Advancing Movement Science Research</div>
+          <p>The <em>Journal of Medicine, Exercise and Health Science</em> (JMEHS) is a peer-reviewed, open-access publication committed to disseminating high-quality research in kinesiology and related disciplines.</p>
+          <p>We welcome original research, systematic reviews, and case studies from scholars and practitioners worldwide, with particular support for early-career researchers.</p>
+        </div>
+        <div>
+          <div class="section-label">Scope &amp; Topics</div>
+          <div class="section-title" style="margin-bottom:1rem; font-size:1.3rem;">Areas We Cover</div>
+          <ul class="scope-list">
+            <li>Biomechanics and motor control</li>
+            <li>Exercise physiology and sport performance</li>
+            <li>Physical rehabilitation and injury prevention</li>
+            <li>Sports psychology and behaviour</li>
+            <li>Public health, physical activity, and aging</li>
+            <li>Adapted physical activity and disability sport</li>
+            <li>Nutrition and human performance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- end home -->
+
+<!-- ══ CURRENT ISSUE PAGE ══ -->
+<div id="current" class="page">
+  <div class="hero" style="padding:3rem 2rem;">
+    <div class="hero-tag">Volume 1, Issue 1 · June 2025</div>
+    <h1 style="font-size:2rem;">Current Issue</h1>
+  </div>
+  <section>
+    <div class="section-inner">
+      <div class="issue-banner">
+        <div class="issue-banner-info">
+          <h3>Volume 1, Issue 1 (2025)</h3>
+          <p>Published June 2025 · 5 Articles · Open Access</p>
+        </div>
+        <span class="issue-badge">JMEHS Vol.1 No.1</span>
+      </div>
+      <div class="articles-grid" id="current-articles"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ══ ABOUT PAGE ══ -->
+<div id="about" class="page">
+  <div class="hero" style="padding:3rem 2rem;">
+    <div class="hero-tag">About JMEHS</div>
+    <h1 style="font-size:2rem;">About the Journal</h1>
+  </div>
+  <section>
+    <div class="section-inner" style="max-width:720px;">
+      <div class="section-label">Mission</div>
+      <div class="section-title">Our Purpose</div>
+      <p style="color:var(--text-muted); margin-bottom:1.2rem; font-size:15.5px; line-height:1.8;">The <em>Journal of Medicine, Exercise and Health Science</em> was founded in 2025 in Canada with a mission to provide an accessible, rigorous venue for kinesiology and movement science research from scholars around the world.</p>
+      <p style="color:var(--text-muted); margin-bottom:1.2rem; font-size:15.5px; line-height:1.8;">We are committed to open-access publishing so that research findings are freely available to practitioners, students, and the public, advancing the field beyond institutional barriers.</p>
+
+      <div class="section-label" style="margin-top:2.5rem;">Publication Details</div>
+      <div class="section-title" style="font-size:1.3rem;">Journal Information</div>
+      <table style="width:100%; border-collapse:collapse; font-size:14.5px;">
+        <tr style="border-bottom:1px solid var(--border);">
+          <td style="padding:0.75rem 0; color:var(--text-muted); width:40%;">Full Title</td>
+          <td style="padding:0.75rem 0; color:var(--navy); font-weight:500;">Journal of Medicine, Exercise and Health Science</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border);">
+          <td style="padding:0.75rem 0; color:var(--text-muted);">Abbreviation</td>
+          <td style="padding:0.75rem 0; font-family:'DM Mono',monospace; font-size:13px;">J. Hum. Mov. Health</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border);">
+          <td style="padding:0.75rem 0; color:var(--text-muted);">Publisher</td>
+          <td style="padding:0.75rem 0;">North Atlas Academic Press, Canada</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border);">
+          <td style="padding:0.75rem 0; color:var(--text-muted);">Publication Type</td>
+          <td style="padding:0.75rem 0;">Open Access, Peer Reviewed</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border);">
+          <td style="padding:0.75rem 0; color:var(--text-muted);">Peer Review</td>
+          <td style="padding:0.75rem 0;">Double-Blind</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border);">
+          <td style="padding:0.75rem 0; color:var(--text-muted);">Founded</td>
+          <td style="padding:0.75rem 0;">2025</td>
+        </tr>
+        <tr>
+          <td style="padding:0.75rem 0; color:var(--text-muted);">Country</td>
+          <td style="padding:0.75rem 0;">Canada</td>
+        </tr>
+      </table>
+
+      <div class="section-label" style="margin-top:2.5rem;">Peer Review Policy</div>
+      <div class="section-title" style="font-size:1.3rem;">Review Process</div>
+      <p style="color:var(--text-muted); margin-bottom:1rem; font-size:15px; line-height:1.8;">All submissions undergo double-blind peer review by at least two independent reviewers with relevant expertise. Authors and reviewers remain anonymous throughout the process.</p>
+      <p style="color:var(--text-muted); font-size:15px; line-height:1.8;">The typical review period is 4–8 weeks from submission. Authors receive detailed reviewer feedback regardless of the editorial decision.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ══ EDITORIAL BOARD PAGE ══ -->
+<div id="board" class="page">
+  <div class="hero" style="padding:3rem 2rem;">
+    <div class="hero-tag">Editorial Team</div>
+    <h1 style="font-size:2rem;">Editorial Board</h1>
+  </div>
+  <section class="board-section" style="background:var(--cream);">
+    <div class="section-inner">
+      <div class="section-label">Leadership</div>
+      <div class="section-title">Editor-in-Chief</div>
+      <div class="board-grid" style="margin-bottom:3rem;">
+        <div class="board-card" style="border-left:3px solid var(--teal);">
+          <div class="board-card-role">Editor-in-Chief</div>
+          <h4>[Your Name]</h4>
+          <p>North Atlas Academic Press<br>Calgary, Alberta, Canada</p>
+        </div>
+      </div>
+
+      <div class="section-label">Associate Editors</div>
+      <div class="section-title">Editorial Board Members</div>
+      <div class="board-grid">
+        <div class="board-card">
+          <div class="board-card-role">Associate Editor</div>
+          <h4>[Name TBD]</h4>
+          <p>Department of Kinesiology<br>University of [Institution]</p>
+        </div>
+        <div class="board-card">
+          <div class="board-card-role">Associate Editor</div>
+          <h4>[Name TBD]</h4>
+          <p>School of Sport Science<br>[Institution]</p>
+        </div>
+        <div class="board-card">
+          <div class="board-card-role">Editorial Board Member</div>
+          <h4>[Name TBD]</h4>
+          <p>Department of Physical Therapy<br>[Institution]</p>
+        </div>
+        <div class="board-card">
+          <div class="board-card-role">Editorial Board Member</div>
+          <h4>[Name TBD]</h4>
+          <p>Faculty of Health Sciences<br>[Institution]</p>
+        </div>
+        <div class="board-card">
+          <div class="board-card-role">Editorial Board Member</div>
+          <h4>[Name TBD]</h4>
+          <p>School of Human Kinetics<br>[Institution]</p>
+        </div>
+      </div>
+      <p style="margin-top:2rem; font-size:14px; color:var(--text-light); font-style:italic;">We are actively recruiting editorial board members. If you are a researcher in kinesiology or related fields and are interested in joining, please <a href="#" onclick="showPage('contact'); return false;" style="color:var(--teal);">contact us</a>.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ══ SUBMIT PAGE ══ -->
+<div id="submit" class="page">
+  <div class="hero" style="padding:3rem 2rem;">
+    <div class="hero-tag">Author Guidelines</div>
+    <h1 style="font-size:2rem;">Submit a Manuscript</h1>
+  </div>
+  <section>
+    <div class="section-inner" style="max-width:720px;">
+
+      <div class="section-label">Before You Submit</div>
+      <div class="section-title">Article Types</div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:2.5rem;">
+        <div style="background:var(--white); border:1px solid var(--border); border-radius:8px; padding:1.4rem;">
+          <div style="font-family:'DM Mono',monospace; font-size:10px; letter-spacing:0.1em; color:var(--teal); text-transform:uppercase; margin-bottom:0.5rem;">Original Research</div>
+          <p style="font-size:14px; color:var(--text-muted);">Empirical studies with clear methodology, results, and discussion. 4,000–8,000 words.</p>
+        </div>
+        <div style="background:var(--white); border:1px solid var(--border); border-radius:8px; padding:1.4rem;">
+          <div style="font-family:'DM Mono',monospace; font-size:10px; letter-spacing:0.1em; color:var(--teal); text-transform:uppercase; margin-bottom:0.5rem;">Systematic Review</div>
+          <p style="font-size:14px; color:var(--text-muted);">Comprehensive literature reviews with clear inclusion criteria. 5,000–10,000 words.</p>
+        </div>
+        <div style="background:var(--white); border:1px solid var(--border); border-radius:8px; padding:1.4rem;">
+          <div style="font-family:'DM Mono',monospace; font-size:10px; letter-spacing:0.1em; color:var(--teal); text-transform:uppercase; margin-bottom:0.5rem;">Narrative Review</div>
+          <p style="font-size:14px; color:var(--text-muted);">Thematic synthesis of existing research. Suitable for early-career researchers. 4,000–7,000 words.</p>
+        </div>
+        <div style="background:var(--white); border:1px solid var(--border); border-radius:8px; padding:1.4rem;">
+          <div style="font-family:'DM Mono',monospace; font-size:10px; letter-spacing:0.1em; color:var(--teal); text-transform:uppercase; margin-bottom:0.5rem;">Case Study</div>
+          <p style="font-size:14px; color:var(--text-muted);">Detailed analysis of a specific case with clinical or scientific relevance. 2,000–4,000 words.</p>
+        </div>
+      </div>
+
+      <div class="section-label">Formatting</div>
+      <div class="section-title" style="font-size:1.3rem;">Manuscript Requirements</div>
+      <ul class="scope-list" style="margin-bottom:2.5rem;">
+        <li>File format: Microsoft Word (.docx) or LaTeX</li>
+        <li>Language: English (British or American, consistent throughout)</li>
+        <li>Font: Times New Roman or similar serif, 12pt, double-spaced</li>
+        <li>Citation style: APA 7th edition</li>
+        <li>Abstract: 200–250 words with 4–6 keywords</li>
+        <li>Figures and tables: embedded in manuscript, also provided separately</li>
+        <li>Blind submission: remove all identifying author information from manuscript file</li>
+      </ul>
+
+      <div class="section-label">Process</div>
+      <div class="section-title" style="font-size:1.3rem;">Review Timeline</div>
+      <div style="display:flex; flex-direction:column; gap:0; margin-bottom:2.5rem; border:1px solid var(--border); border-radius:8px; overflow:hidden;">
+        <div style="padding:1rem 1.5rem; background:var(--white); border-bottom:1px solid var(--border); display:flex; align-items:center; gap:1rem;">
+          <span style="font-family:'DM Mono',monospace; font-size:11px; color:var(--teal); min-width:60px;">Week 1</span>
+          <span style="font-size:14.5px; color:var(--text-muted);">Initial editorial screening for scope and formatting</span>
+        </div>
+        <div style="padding:1rem 1.5rem; background:var(--white); border-bottom:1px solid var(--border); display:flex; align-items:center; gap:1rem;">
+          <span style="font-family:'DM Mono',monospace; font-size:11px; color:var(--teal); min-width:60px;">Week 2–6</span>
+          <span style="font-size:14.5px; color:var(--text-muted);">Double-blind peer review by 2 independent reviewers</span>
+        </div>
+        <div style="padding:1rem 1.5rem; background:var(--white); border-bottom:1px solid var(--border); display:flex; align-items:center; gap:1rem;">
+          <span style="font-family:'DM Mono',monospace; font-size:11px; color:var(--teal); min-width:60px;">Week 7–8</span>
+          <span style="font-size:14.5px; color:var(--text-muted);">Editorial decision and reviewer feedback returned to author</span>
+        </div>
+        <div style="padding:1rem 1.5rem; background:var(--white); display:flex; align-items:center; gap:1rem;">
+          <span style="font-family:'DM Mono',monospace; font-size:11px; color:var(--teal); min-width:60px;">After rev.</span>
+          <span style="font-size:14.5px; color:var(--text-muted);">Revision review, copyediting, and online-first publication</span>
+        </div>
+      </div>
+
+      <div style="background:var(--navy); border-radius:8px; padding:2rem; text-align:center;">
+        <p style="color:rgba(255,255,255,0.6); font-size:14px; margin-bottom:0.5rem;">Submit your manuscript by email</p>
+        <a href="mailto:editor@JMEHSjournal.org" style="color:var(--teal-light); font-size:1.1rem; font-weight:500; text-decoration:none; font-family:'DM Mono',monospace;">editor@jmehsjournal.org</a>
+        <p style="color:rgba(255,255,255,0.4); font-size:13px; margin-top:0.8rem;">Online submission system coming soon. Currently accepting submissions via email.</p>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<!-- ══ CONTACT PAGE ══ -->
+<div id="contact" class="page">
+  <div class="hero" style="padding:3rem 2rem;">
+    <div class="hero-tag">Get in Touch</div>
+    <h1 style="font-size:2rem;">Contact</h1>
+  </div>
+  <section class="contact-section">
+    <div class="section-inner">
+      <div class="contact-grid">
+        <div class="contact-block">
+          <h4>EDITORIAL OFFICE</h4>
+          <p>North Atlas Academic Press<br>Calgary, Alberta<br>Canada</p>
+        </div>
+        <div class="contact-block">
+          <h4>EMAIL</h4>
+          <p>
+            General: <a href="mailto:info@jmehsjournal.org">info@jmehsjournal.org</a><br>
+            Submissions: <a href="mailto:editor@jmehsjournal.org">editor@jmehsjournal.org</a><br>
+            Editorial Board: <a href="mailto:board@jmehsjournal.org">board@jmehsjournal.org</a>
+          </p>
+        </div>
+        <div class="contact-block">
+          <h4>CALL FOR PAPERS</h4>
+          <p>We are currently accepting submissions for Volume 1, Issue 2 (2025). <a href="#" onclick="showPage('submit'); return false;" style="color:var(--teal);">View guidelines →</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══ SUBMIT CTA (shown on home/current) ══ -->
+<section class="submit-section" id="cta-section">
+  <div class="section-inner">
+    <div class="section-label">Call for Papers</div>
+    <div class="section-title">Submit to Volume 1, Issue 2</div>
+    <p>We welcome submissions from researchers, graduate students, and clinicians worldwide. Open access, no subscription fees for readers.</p>
+    <div class="submit-features">
+      <div class="submit-feature">Double-blind peer review</div>
+      <div class="submit-feature">Open access publication</div>
+      <div class="submit-feature">DOI assigned to all articles</div>
+      <div class="submit-feature">8-week review target</div>
+    </div>
+    <a href="#" class="btn-primary" onclick="showPage('submit'); return false;" style="font-size:15px; padding:13px 32px;">View Author Guidelines</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Journal of Medicine, Exercise and Health Science · Published by North Atlas Academic Press, Calgary, Canada<br>
+  <a href="#" onclick="showPage('about'); return false;">About</a> ·
+  <a href="#" onclick="showPage('submit'); return false;">Submit</a> ·
+  <a href="#" onclick="showPage('contact'); return false;">Contact</a> ·
+  <a href="mailto:editor@jmehsjournal.org">editor@jmehsjournal.org</a>
+  </p>
+</footer>
+
+<script>
+const articles = [
+  {
+    type: "Original Research",
+    title: "Effects of Resistance Training Frequency on Muscle Hypertrophy in Untrained Young Adults: A Randomized Controlled Trial",
+    authors: "Zhang, W., Li, M., Chen, X.",
+    affiliation: "Department of Kinesiology, [University]",
+    pages: "1–14",
+    doi: "10.xxxxx/jmehs.2025.001",
+    pdf: "papers/zhang-et-al-2025.pdf"
+  },
+  {
+    type: "Systematic Review",
+    title: "Proprioceptive Training Interventions and Ankle Sprain Prevention in Athletes: A Systematic Review and Meta-Analysis",
+    authors: "Wang, J., Liu, Y., Park, S.",
+    affiliation: "[University]",
+    pages: "15–29",
+    doi: "10.xxxxx/jmehs.2025.002",
+    pdf: "papers/wang-et-al-2025.pdf"
+  },
+  {
+    type: "Original Research",
+    title: "Gait Asymmetry Patterns Following Anterior Cruciate Ligament Reconstruction: A Six-Month Longitudinal Analysis",
+    authors: "Chen, R., Thompson, A.",
+    affiliation: "School of Health Sciences, [University]",
+    pages: "30–41",
+    doi: "10.xxxxx/jmehs.2025.003",
+    pdf: "papers/chen-thompson-2025.pdf"
+  },
+  {
+    type: "Narrative Review",
+    title: "Physical Activity Promotion Strategies Among University Students: Evidence Synthesis and Practical Recommendations",
+    authors: "Liu, S., Huang, T., Zhao, Q.",
+    affiliation: "[University]",
+    pages: "42–55",
+    doi: "10.xxxxx/jmehs.2025.004",
+    pdf: "papers/liu-et-al-2025.pdf"
+  },
+  {
+    type: "Case Study",
+    title: "Return-to-Sport Protocol Following Hamstring Grade III Tear in a Competitive Sprinter: A Case Report",
+    authors: "Kim, J., Nakamura, H.",
+    affiliation: "Department of Sports Medicine, [University]",
+    pages: "56–63",
+    doi: "10.xxxxx/jmehs.2025.005",
+    pdf: "papers/kim-nakamura-2025.pdf"
+  }
+];
+
+function renderArticles(containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  container.innerHTML = articles.map(a => `
+    <a class="article-card" href="${a.pdf}" target="_blank" onclick="event.stopPropagation();" style="cursor:default; text-decoration:none;">
+      <div>
+        <div class="article-type">${a.type}</div>
+        <div class="article-title">${a.title}</div>
+        <div class="article-authors">${a.authors}</div>
+        <div class="article-meta">
+          <span>pp. ${a.pages}</span>
+          <span style="font-family:'DM Mono',monospace; font-size:11px;">${a.doi}</span>
+        </div>
+      </div>
+      <a href="${a.pdf}" target="_blank" class="pdf-btn" onclick="event.stopPropagation();">
+        <svg class="pdf-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+        PDF
+      </a>
+    </a>
+  `).join('');
+}
+
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  document.getElementById(name).classList.add('active');
+  document.getElementById('nav-' + name)?.classList.add('active');
+  const cta = document.getElementById('cta-section');
+  cta.style.display = (name === 'home' || name === 'current') ? '' : 'none';
+  window.scrollTo(0, 0);
+}
+
+renderArticles('home-articles');
+renderArticles('current-articles');
+</script>
+</body>
+</html>
