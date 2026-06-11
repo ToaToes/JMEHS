@@ -372,7 +372,7 @@ section { padding: 4rem 2rem; }
 .contact-section { 
   background: var(--warm-gray);
   border-top: 1px solid var(--border); 
-  height: 100vh;         /* 铺满整个视口高度 */
+  min-height: calc(100vh - 200px); /* 200px 約為 hero 區塊高度，依實際調整 */
   display: flex;         /* 可选：让内部内容垂直居中 */
   flex-direction: column;
   justify-content: center; /* 让内容在垂直方向上也居中（可选） */
