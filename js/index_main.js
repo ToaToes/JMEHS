@@ -99,22 +99,6 @@ function renderArticles(containerId) {
 // ===========================
 
 
-function adjustContactSpacer() {
-  const contactPage = document.getElementById('contact');
-  if (!contactPage.classList.contains('active')) return;
-
-  const spacer = document.getElementById('contact-spacer');
-  const nav = document.querySelector('nav');
-  const footer = document.querySelector('footer');
-  
-  const viewportHeight = window.innerHeight;
-  const usedHeight = contactPage.scrollHeight - spacer.offsetHeight 
-                      + nav.offsetHeight + footer.offsetHeight;
-  
-  const remaining = viewportHeight - usedHeight;
-  spacer.style.height = remaining > 0 ? remaining + 'px' : '0px';
-}
-
 
 // ===========================
 // Navigation
@@ -147,7 +131,6 @@ function showPage(name) {
 // ===========================
 // Initialize
 // ===========================
-window.addEventListener('resize', adjustContactSpacer);
 renderArticles('home-articles');
 renderArticles('current-articles');
 
