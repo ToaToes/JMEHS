@@ -273,7 +273,7 @@ section { padding: 4rem 2rem; }
   stroke: currentColor; stroke-width: 1.8;
 }
 
-/* ── ABOUT SECTION ── */
+/* ── ABOUT SECTION ── 
 .about-section { background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .about-grid {
   display: grid;
@@ -305,6 +305,121 @@ section { padding: 4rem 2rem; }
   margin-top: 8px;
   flex-shrink: 0;
 }
+*/
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 2.5rem;
+  max-width: 920px;
+}
+
+.about-p {
+  color: var(--text-muted);
+  margin-bottom: 1.2rem;
+  font-size: 15.5px;
+  line-height: 1.8;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.research-tag {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--teal);
+  border-radius: 4px;
+  padding: 0.85rem 1rem;
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: var(--navy);
+}
+
+.review-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 1.2rem;
+}
+
+.review-step {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 0.8rem;
+  text-align: center;
+  font-size: 13.5px;
+}
+
+.step-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--teal);
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.step-sub {
+  color: var(--text-light);
+  font-size: 12px;
+}
+
+.about-sidebar {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.facts-card {
+  background: var(--cream);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.facts-table {
+  width: 100%;
+  font-size: 13px;
+  border-collapse: collapse;
+  margin-top: 0.8rem;
+}
+
+.facts-table td {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.facts-table td:first-child {
+  color: var(--text-muted);
+}
+
+.facts-table td:last-child {
+  text-align: right;
+  font-weight: 500;
+}
+
+.facts-table tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+  .review-steps {
+    grid-template-columns: 1fr;
+  }
+  .about-sidebar {
+    position: static;
+  }
+}
+
+
 
 /* ── EDITORIAL BOARD ── */
 .board-section { background: var(--cream); }
