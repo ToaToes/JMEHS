@@ -372,7 +372,10 @@ section { padding: 4rem 2rem; }
 .contact-section { 
   background: var(--warm-gray);
   border-top: 1px solid var(--border); 
-  padding: 2rem 0;       /* 上下内边距保留，左右为0（让内部内容自己控制居中） */
+  height: 100vh;         /* 铺满整个视口高度 */
+  display: flex;         /* 可选：让内部内容垂直居中 */
+  flex-direction: column;
+  justify-content: center; /* 让内容在垂直方向上也居中（可选） */
 }
 .contact-grid {
   display: grid;
