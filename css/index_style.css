@@ -369,7 +369,11 @@ section { padding: 4rem 2rem; }
 }
 
 /* ── CONTACT ── */
-.contact-section { background: var(--warm-gray); border-top: 1px solid var(--border); }
+.contact-section { 
+  background: var(--warm-gray);
+  border-top: 1px solid var(--border); 
+  padding: 2rem 0;       /* 上下内边距保留，左右为0（让内部内容自己控制居中） */
+}
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
