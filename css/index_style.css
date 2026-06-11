@@ -407,4 +407,4 @@ footer a:hover { color: var(--teal-light); }
 /* ── PAGE SECTIONS (hidden by default) ── */
 .page { display: none; }
 .page.active { display: block; }
-#home { display: block; }
+/* #home { display: block; } */
