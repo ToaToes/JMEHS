@@ -147,6 +147,7 @@ function showPage(name) {
 // ===========================
 // Initialize
 // ===========================
-
+window.addEventListener('resize', adjustContactSpacer);
 renderArticles('home-articles');
 renderArticles('current-articles');
+
