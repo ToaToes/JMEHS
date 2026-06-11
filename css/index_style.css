@@ -377,9 +377,7 @@ section { padding: 4rem 2rem; }
   padding-bottom: 18rem; /* 直接加大底部留白 */
   
 }
-.contact-spacer {
-  flex-shrink: 0;
-}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
