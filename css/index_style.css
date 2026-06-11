@@ -369,27 +369,13 @@ section { padding: 4rem 2rem; }
 }
 
 /* ── CONTACT ── */
-#contact {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-#contact .hero {
-  flex-shrink: 0;
-}
-
-#contact .contact-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: auto; /* 移除原本的 100vh */
-}
 
 .contact-section { 
   background: var(--warm-gray);
   border-top: 1px solid var(--border); 
+}
+.contact-spacer {
+  flex-shrink: 0;
 }
 .contact-grid {
   display: grid;
