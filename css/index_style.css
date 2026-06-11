@@ -374,7 +374,7 @@ section { padding: 4rem 2rem; }
   background: var(--warm-gray);
   border-top: 1px solid var(--border); 
   padding-top: 17rem;
-  padding-bottom: 20rem; /* 直接加大底部留白 */
+  padding-bottom: 21rem; /* 直接加大底部留白 */
   
 }
 
