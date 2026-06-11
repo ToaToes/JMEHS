@@ -373,6 +373,7 @@ section { padding: 4rem 2rem; }
 .contact-section { 
   background: var(--warm-gray);
   border-top: 1px solid var(--border); 
+  padding-bottom: 12rem; /* 直接加大底部留白 */
 }
 .contact-spacer {
   flex-shrink: 0;
