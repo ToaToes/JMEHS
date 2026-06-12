@@ -98,6 +98,12 @@ function renderArticles(containerId) {
 // Help Tool
 // ===========================
 
+window.addEventListener('DOMContentLoaded', () => {
+  const hash = location.hash.replace('#', '');
+  if (hash && document.getElementById(hash)) {
+    showPage(hash);
+  }
+});
 
 
 // ===========================
