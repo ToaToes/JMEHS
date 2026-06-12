@@ -58,10 +58,10 @@ nav {
 .nav-links a.active { color: white; border-color: var(--teal-light); }
 
 .nav-login {
-  border: 1px solid var(--teal);
+  border: 1px solid var(--teal-light);
   border-radius: 6px;
   padding: 6px 14px !important;
-  color: var(--teal) !important;
+  color: var(--teal-light) !important;
   font-size: 13.5px;
 }
 
