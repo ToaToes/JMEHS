@@ -287,6 +287,7 @@ section { padding: 4rem 2rem; }
   stroke: currentColor; stroke-width: 1.8;
 }
 
+
 /* ── ABOUT SECTION ── */
 .about-section { background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .about-grid {
@@ -318,6 +319,37 @@ section { padding: 4rem 2rem; }
   border-radius: 50%;
   margin-top: 8px;
   flex-shrink: 0;
+}
+.article-type-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.4rem;
+  display: block;
+  text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.article-type-card:hover {
+  border-color: var(--teal);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.article-type-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--teal);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.article-type-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 0.8rem;
+}
+.article-type-link {
+  font-size: 12.5px;
+  color: var(--teal);
+  font-weight: 500;
 }
 
 
