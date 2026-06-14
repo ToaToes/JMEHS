@@ -1,0 +1,75 @@
+.issues-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.issue-cover-card {
+  display: block;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  position: relative;
+}
+
+.issue-cover-card:hover {
+  border-color: var(--teal);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.issue-current-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: var(--teal);
+  color: white;
+  font-size: 10px;
+  font-family: 'DM Mono', monospace;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.issue-cover-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+}
+
+.issue-cover-placeholder {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.issue-cover-info {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.issue-cover-title {
+  font-size: 12.5px;
+  color: var(--navy);
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  line-height: 1.4;
+}
+
+.issue-cover-date {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  font-family: 'DM Mono', monospace;
+}
