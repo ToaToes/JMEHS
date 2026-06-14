@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/index_style.css">
+<link rel="stylesheet" href="css/api_style.css">
 </head>
 <body>
 
@@ -52,25 +53,15 @@
   </div>
 
   <section>
-    <div class="section-inner">
-      <div class="section-label">Latest Articles</div>
-      <div class="section-title">Volume 1, Issue 1 — 2025</div>
-
-      <div class="issue-banner">
-        <div class="issue-banner-info">
-          <h3>Volume 1, Issue 1 is now available</h3>
-          <p>5 articles across kinesiology, movement science, and sport rehabilitation.</p>
-        </div>
-        <span class="issue-badge">June 2025</span>
-      </div>
-
-      <div class="articles-grid" id="home-articles"></div>
-
-      <div style="text-align:center; margin-top:2rem;">
-        <a href="#" class="btn-primary" onclick="showPage('current'); return false;">View Full Issue</a>
-      </div>
+  <div class="section-inner">
+    <div class="section-label">Published Issues</div>
+    <div class="section-title" id="home-issues-title">All Issues</div>
+    <div class="issues-grid" id="issues-grid"></div>
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="#" class="btn-primary" onclick="showPage('current'); return false;">View Current Issue</a>
     </div>
-  </section>
+  </div>
+</section>
 
   <section class="about-section">
     <div class="section-inner">
@@ -103,18 +94,19 @@
 <!-- ══ CURRENT ISSUE PAGE ══ -->
 <div id="current" class="page">
   <div class="hero" style="padding:3rem 2rem;">
-    <div class="hero-tag">Volume 1, Issue 1 · June 2025</div>
+    <div class="hero-tag" id="current-hero-tag">Current Issue</div>
     <h1 style="font-size:2rem;">Current Issue</h1>
   </div>
   <section>
     <div class="section-inner">
-      <div class="issue-banner">
+      <div class="issue-banner" id="current-issue-banner">
         <div class="issue-banner-info">
-          <h3>Volume 1, Issue 1 (2025)</h3>
-          <p>Published June 2025 · 5 Articles · Open Access</p>
+          <h3 id="current-issue-title">Loading...</h3>
+          <p id="current-issue-meta">Fetching latest issue...</p>
         </div>
-        <span class="issue-badge">JMEHS Vol.1 No.1</span>
+        <span class="issue-badge" id="current-issue-badge">JMEHS</span>
       </div>
+      <div id="current-issue-description" style="color:var(--text-muted); font-size:15px; line-height:1.8; margin-bottom:2rem;"></div>
       <div class="articles-grid" id="current-articles"></div>
 
       <div style="text-align:center; margin-top:2.5rem; padding-bottom:1rem;">
@@ -429,6 +421,7 @@
   </p>
 </footer>
 
+<script src="js/api_get.js"></script>
 <script src="js/index_main.js"></script>
 </body>
 
