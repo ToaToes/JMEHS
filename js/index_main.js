@@ -2,7 +2,7 @@
 // ===========================
 // Articles Database
 // ===========================
-
+/*
 const articles = [
   {
     type: "Original Research",
@@ -91,52 +91,30 @@ function renderArticles(containerId) {
   `).join('');
 }
 
-
-
-
-// ===========================
-// Help Tool
-// ===========================
-
-window.addEventListener('DOMContentLoaded', () => {
-  const hash = location.hash.replace('#', '');
-  if (hash && document.getElementById(hash)) {
-    showPage(hash);
-  }
-});
-
+*/
 
 // ===========================
 // Navigation
 // ===========================
-
 function showPage(name) {
-  document
-    .querySelectorAll('.page')
-    .forEach(p => p.classList.remove('active'));
-
-  document 
-    .querySelectorAll('.nav-links a')
-    .forEach(a => a.classList.remove('active'));
-
-  document
-    .getElementById(name)
-    .classList.add('active');
-
-  document
-    .getElementById('nav-' + name)
-    ?.classList.add('active');
-
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  document.getElementById(name).classList.add('active');
+  document.getElementById('nav-' + name)?.classList.add('active');
   const cta = document.getElementById('cta-section');
-
   cta.style.display = (name === 'home' || name === 'current') ? '' : 'none';
-  
   window.scrollTo(0, 0);
 }
 
 // ===========================
 // Initialize
 // ===========================
-renderArticles('home-articles');
-renderArticles('current-articles');
+window.addEventListener('DOMContentLoaded', () => {
+  const hash = location.hash.replace('#', '');
+  if (hash && document.getElementById(hash)) {
+    showPage(hash);
+  }
 
+  loadIssues();
+  loadCurrentIssue();
+});
