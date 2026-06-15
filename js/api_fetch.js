@@ -1,5 +1,5 @@
 const OJS_BASE = 'https://ojs.jmehs.org/index.php/jmehs';
-const OJS_API = `${OJS_BASE}/api/v1`;
+const OJS_API = 'https://api.jmehs.org';
 
 // ===========================
 // Strip HTML tags from description
@@ -14,6 +14,7 @@ function stripHtml(html) {
 // Load All Issues → Home Page
 // ===========================
 async function loadIssues() {
+
   const container = document.getElementById('issues-grid');
   const titleEl = document.getElementById('home-issues-title');
   if (!container) return;
