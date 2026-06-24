@@ -509,10 +509,10 @@ footer a:hover { color: var(--teal-light); }
   transform: translateY(-7px) rotate(-45deg);
 }
 
-.nav-login-mobile {
-  display: none;
+a.nav-login-mobile {
+  display: none !important;
 }
-.nav-login-desktop {
+a.nav-login-desktop {
   display: flex;
   align-items: center;
 }
@@ -524,11 +524,11 @@ footer a:hover { color: var(--teal-light); }
     display: flex;
   }
 
-  .nav-login-desktop {
-    display: none;
+  a.nav-login-desktop {
+    display: none !important;
   }
-  .nav-login-mobile {
-    display: block;
+  a.nav-login-mobile {
+    display: block !important;
   }
 
   .nav-links {
