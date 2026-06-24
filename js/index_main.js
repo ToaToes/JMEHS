@@ -110,6 +110,12 @@ function showPage(name) {
 // Initialize
 // ===========================
 window.addEventListener('DOMContentLoaded', () => {
+
+  // 漢堡選單
+  document.getElementById('hamburger')
+    ?.addEventListener('click', toggleMobileMenu);
+
+  // hash 跳轉
   const hash = location.hash.replace('#', '');
   if (hash && document.getElementById(hash)) {
     showPage(hash);
