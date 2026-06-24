@@ -118,3 +118,29 @@ window.addEventListener('DOMContentLoaded', () => {
   loadIssues();
   loadCurrentIssue();
 });
+
+
+// ===========================
+// Mobile Menu
+// ===========================
+function toggleMobileMenu() {
+  const navLinks = document.getElementById('nav-links');
+  const hamburger = document.getElementById('hamburger');
+  navLinks.classList.toggle('mobile-open');
+  hamburger.classList.toggle('open');
+}
+
+function closeMobileMenu() {
+  const navLinks = document.getElementById('nav-links');
+  const hamburger = document.getElementById('hamburger');
+  navLinks.classList.remove('mobile-open');
+  hamburger.classList.remove('open');
+}
+
+// 點擊頁面其他地方關閉選單
+document.addEventListener('click', (e) => {
+  const nav = document.querySelector('nav');
+  if (!nav.contains(e.target)) {
+    closeMobileMenu();
+  }
+});
