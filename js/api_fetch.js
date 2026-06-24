@@ -97,7 +97,8 @@ async function loadCurrentIssue() {
     }
 
     // Step 2: Update banner and hero
-    const identification = issue.identification || `Vol. ${issue.volume} No. ${issue.number} (${issue.year})`;
+    // remove issue.identification 去重
+    const identification = `Vol. ${issue.volume} No. ${issue.number} (${issue.year})`;
     const date = issue.datePublished?.slice(0, 7) || '';
 
     if (heroTag) heroTag.textContent = identification;
