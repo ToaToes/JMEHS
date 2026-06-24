@@ -17,15 +17,23 @@
 <nav>
   <div class="nav-inner">
     <a href="#" class="nav-logo" onclick="showPage('home')">JMEHS</a>
-    <div class="nav-links">
-      <a href="#" class="active" id="nav-home" onclick="showPage('home'); return false;">Home</a>
-      <a href="#" id="nav-current" onclick="showPage('current'); return false;">Current Issue</a>
-      <a href="#" id="nav-about" onclick="showPage('about'); return false;">About</a>
-      <a href="#" id="nav-board" onclick="showPage('board'); return false;">Editorial Board</a>
-      <a href="#" id="nav-submit" onclick="showPage('submit'); return false;">Submit</a>
-      <a href="#" id="nav-contact" onclick="showPage('contact'); return false;">Contact</a>
+    <div class="nav-links" id="nav-links">
+      <a href="#" class="active" id="nav-home" onclick="showPage('home'); closeMobileMenu(); return false;">Home</a>
+      <a href="#" id="nav-current" onclick="showPage('current'); closeMobileMenu(); return false;">Current Issue</a>
+      <a href="#" id="nav-about" onclick="showPage('about'); closeMobileMenu(); return false;">About</a>
+      <a href="#" id="nav-board" onclick="showPage('board'); closeMobileMenu(); return false;">Editorial Board</a>
+      <a href="#" id="nav-submit" onclick="showPage('submit'); closeMobileMenu(); return false;">Submit</a>
+      <a href="#" id="nav-contact" onclick="showPage('contact'); closeMobileMenu(); return false;">Contact</a>
+      <a href="https://ojs.jmehs.org/index.php/jmehs/login" target="_blank" class="nav-login nav-login-mobile">Login / Register</a>
     </div>
-    <a href="https://ojs.jmehs.org/index.php/jmehs/login" target="_blank" class="nav-login">Login / Register</a>
+      <div class="nav-right">
+        <a href="https://ojs.jmehs.org/index.php/jmehs/login" target="_blank" class="nav-login nav-login-desktop">Login / Register</a>
+        <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
   </div>
 </nav>
 
