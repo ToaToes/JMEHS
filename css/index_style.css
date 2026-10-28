@@ -711,3 +711,11 @@ a.nav-login-desktop {
   border-radius: 4px;
   padding: 5px 8px;
 }
+
+.footer-issn {
+  display: inline-block;
+  margin: 10px 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
